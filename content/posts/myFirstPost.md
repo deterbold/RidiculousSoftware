@@ -12,3 +12,4 @@ Hugo makes it easy to create fast, static websites.
 This is an update
 and another update
 and the third update
+and the fourth update
