@@ -28,8 +28,8 @@ showReadingTime = false
 
 [languages]
 [languages.en]
-title = "Stupid Technology"
-subtitle = "A Ridiculous Software Project"
+title = "Ridiculous Software"
+subtitle = "All Software is Ridiculous"
 keywords = "technology!"
 copyright = "A Ridiculous Software Project"
 menuMore = "Show more"
@@ -45,7 +45,7 @@ dateFormatList = "2006-01-02"
 # lastModDisplay = ""
 
 [languages.en.params.logo]
-logoText = "Stupid Technology"
+logoText = "Ridiculous Software"
 logoHomeLink = "/"
 # or
 #
@@ -58,9 +58,9 @@ identifier = "about"
 name = "About"
 url = "/about"
 [[languages.en.menu.main]]
-identifier = "experiments"
-name = "Experiments"
-url = "/experiments"
+identifier = "apps"
+name = "Apps"
+url = "/apps"
 [[languages.en.menu.main]]
 identifier = "research"
 name = "Research"
