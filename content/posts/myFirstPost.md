@@ -10,3 +10,4 @@ Welcome to my new Hugo site! This is my first post.
 
 Hugo makes it easy to create fast, static websites.
 This is an update
+and another update
