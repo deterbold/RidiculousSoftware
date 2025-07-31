@@ -1,56 +1,71 @@
-baseurl = "localhost"
-title = "My Blog"
+baseurl = "https://ridiculous.software"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+theme = "hello-friend"
+relativeURLs = false
+canonifyurls = true
 
 [params]
-dateform = "Jan 2, 2006"
-dateformShort = "Jan 2"
-dateformNum = "2006-01-02"
-dateformNumTime = "2006-01-02 15:04"
+# dir name of your blog content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = ""
 
-# Subtitle for home
-homeSubtitle = "A simple and beautiful blog"
+# "light" or "dark"
+defaultTheme = "dark"
 
-# Set disableReadOtherPosts to true in order to hide the links to other posts.
-disableReadOtherPosts = false
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 3
 
-# Enable sharing buttons, if you like
-enableSharingButtons = true
+# Show reading time in minutes for posts
+showReadingTime = false
 
-# Show a global language switcher in the navigation bar
-enableGlobalLanguageMenu = true
+# Show table of contents at the top of your posts (defaults to false)
+# Alternatively, add this param to post front matter for specific posts
+# toc = true
 
-# Metadata mostly used in document's head
-description = "My new homepage or blog"
-keywords = "homepage, blog"
-images = [""]
-
-[taxonomies]
-category = "blog"
-tag = "tags"
-series = "series"
+# Show full page content in RSS feed items
+#(default is Description or Summary metadata in the front matter)
+# rssFullText = true
 
 [languages]
 [languages.en]
-title = "Hello Friend NG"
-keywords = ""
-copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+title = "Stupid Technology"
+subtitle = "A Ridiculous Software Project"
+keywords = "technology!"
+copyright = "A Ridiculous Software Project"
+menuMore = "Show more"
+writtenBy = "Written by"
+readMore = ""
 readOtherPosts = "Read other posts"
-
-[languages.en.params]
-subtitle = "A simple theme for Hugo"
+newerPosts = "Newer posts"
+olderPosts = "Older posts"
+minuteReadingTime = "min read"
+dateFormatSingle = "2006-01-02"
+dateFormatList = "2006-01-02"
+# leave empty to disable, enter display text to enable
+# lastModDisplay = ""
 
 [languages.en.params.logo]
-logoText = "hello friend ng"
+logoText = "Stupid Technology"
 logoHomeLink = "/"
 # or
 #
 # path = "/img/your-example-logo.svg"
 # alt = "Your example logo alt text"
 
-# And you can even create generic menu
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/posts"
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+[[languages.en.menu.main]]
+identifier = "experiments"
+name = "Experiments"
+url = "/experiments"
+[[languages.en.menu.main]]
+identifier = "research"
+name = "Research"
+url = "/research"
+# [[languages.en.menu.main]]
+#   identifier = "education"
+#   name = "Education"
+#   url = "/CP/introduction"
