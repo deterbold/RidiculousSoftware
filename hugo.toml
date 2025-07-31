@@ -1,6 +1,6 @@
 baseurl = "https://ridiculous.software"
 languageCode = "en-us"
-theme = "hello-friend"
+theme = "hello-friend-ng"
 relativeURLs = false
 canonifyurls = true
 
