@@ -3,8 +3,8 @@
     <article class="post">
         <!-- Company Logo -->
         {{ if .Params.logo }}
-        <div class="company-logo" style="text-align: center; margin: 3rem 0;">
-            <img src="{{ .Params.logo | relURL }}" alt="{{ .Site.Title }} Logo" style="max-width: 300px; height: auto;">
+        <div class="company-logo" style="display: flex; justify-content: center; align-items: center; margin: 3rem 0;">
+            <img src="{{ .Params.logo | relURL }}" alt="{{ .Site.Title }} Logo" style="max-width: 300px; height: auto; display: block;">
         </div>
         {{ end }}
 
