@@ -25,9 +25,9 @@ app_logos:
   - name: "ML Buddha"
     image: "/images/pages/ml_buddha/icon.png"
     link: "/apps/ml-buddha"
-  - name: "Everybody/Art"
-    image: "/images/pages/everybody_art/icon.jpg"
-    link: "/apps/everybody-art"
+  # - name: "Everybody/Art"
+  #   image: "/images/pages/everybody_art/icon.jpg"
+  #   link: "/apps/everybody-art"
 ---
 
 ## Who We Are
