@@ -1,0 +1,85 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+
+    <div class="post-content">
+        <!-- Introductory Content -->
+        <div class="apps-intro">
+            {{ .Content }}
+        </div>
+
+        <!-- Apps List -->
+        {{ if .Params.featured_apps }}
+        <div class="apps-list" style="margin-top: 3rem;">
+            {{ range .Params.featured_apps }}
+            <div class="app-item" style="display: flex; align-items: center; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid var(--border-color, #eee); border-radius: 8px; transition: all 0.2s ease;">
+                <div class="app-logo" style="flex-shrink: 0; margin-right: 1.5rem;">
+                    <img src="{{ .logo | relURL }}" alt="{{ .name }} Logo" style="width: 64px; height: 64px; object-fit: contain; border-radius: 8px;">
+                </div>
+                <div class="app-info" style="flex-grow: 1;">
+                    <h3 style="margin: 0 0 0.5rem 0;">
+                        <a href="{{ .link }}" style="text-decoration: none; color: inherit;">{{ .name }}</a>
+                    </h3>
+                    <p style="margin: 0; color: var(--text-color-secondary, #666); font-size: 0.95rem;">{{ .description }}</p>
+                    {{ if .platform }}
+                    <div class="app-meta" style="margin-top: 0.5rem;">
+                        <span style="font-size: 0.85rem; color: var(--text-color-tertiary, #999);">{{ .platform }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="app-link" style="flex-shrink: 0;">
+                    <a href="{{ .link }}" style="background: var(--accent-color, #007AFF); color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: 500;">View App</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Automatic Apps List (fallback if no featured_apps) -->
+        {{ if not .Params.featured_apps }}
+        <div class="apps-list" style="margin-top: 3rem;">
+            {{ range .Pages }}
+            <div class="app-item" style="display: flex; align-items: center; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid var(--border-color, #eee); border-radius: 8px; transition: all 0.2s ease;">
+                <div class="app-logo" style="flex-shrink: 0; margin-right: 1.5rem;">
+                    {{ if .Params.cover_image }}
+                    <img src="{{ .Params.cover_image | relURL }}" alt="{{ .Title }} Logo" style="width: 64px; height: 64px; object-fit: contain; border-radius: 8px;">
+                    {{ end }}
+                </div>
+                <div class="app-info" style="flex-grow: 1;">
+                    <h3 style="margin: 0 0 0.5rem 0;">
+                        <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
+                    </h3>
+                    <p style="margin: 0; color: var(--text-color-secondary, #666); font-size: 0.95rem;">{{ .Summary | truncate 120 }}</p>
+                    {{ if .Params.platform }}
+                    <div class="app-meta" style="margin-top: 0.5rem;">
+                        <span style="font-size: 0.85rem; color: var(--text-color-tertiary, #999);">{{ .Params.platform }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="app-link" style="flex-shrink: 0;">
+                    <a href="{{ .Permalink }}" style="background: var(--accent-color, #007AFF); color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: 500;">View App</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</article>
+
+<style>
+.app-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+.app-item h3 a:hover {
+    color: var(--accent-color, #007AFF);
+}
+
+.app-link a:hover {
+    background: var(--accent-color-hover, #0056b3);
+}
+</style>
+{{ end }}

@@ -1,0 +1,136 @@
+baseURL = "https://ridiculous.software"
+languageCode = "en-us"
+title = "Ridiculous Software"
+theme = "hello-friend-ng"
+enableGitInfo = false
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+metaDataFormat = "yaml"
+[pagination]
+pagerSize = 6
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+work = "works"
+author = "authors"
+
+[params]
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+description = "Ridiculous Software - AI-powered mobile applications"
+homeSubtitle = "AI-powered mobile applications"
+enableThemeToggle = true
+enableSharingButtons = false
+
+[params.author]
+name = "Ridiculous Software"
+
+[params.footer]
+trademark = 2024
+copyright = true
+author = true
+
+[params.logo]
+logoMark     = ">"
+logoText     = "$ ridiculous.software"
+logoHomeLink = "/"
+
+# Main Menu
+[[menu.main]]
+name = "Apps"
+url = "/pages"
+weight = 1
+identifier = 'dropdown'
+[[menu.main]]
+name = "Probably Not"
+url = "/probably_not"
+parent = "dropdown"
+weight = 1
+[[menu.main]]
+name = "ATTN"
+url = "/attn"
+parent = "dropdown"
+weight = 2
+[[menu.main]]
+name = "World to GIF"
+url = "/world_to_gif"
+parent = "dropdown"
+weight = 3
+[[menu.main]]
+name = "Tastegram"
+url = "/tastegram"
+parent = "dropdown"
+weight = 4
+[[menu.main]]
+name = "Soylent Science"
+url = "/soylent_science"
+parent = "dropdown"
+weight = 5
+[[menu.main]]
+name = "Existential Check"
+url = "/existential_check"
+parent = "dropdown"
+weight = 6
+
+[[menu.main]]
+name = "Manifesto"
+url = "/manifesto"
+weight = 2
+
+[[menu.main]]
+name = "The Team"
+url = "/the_team"
+weight = 3
+
+[[menu.main]]
+name = "Everybody/Art"
+url = "/everybody_art"
+weight = 4
+
+# Footer Menu Primary
+[[menu.footer_primary]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.footer_primary]]
+name = "Apps"
+url = "/pages"
+weight = 2
+[[menu.footer_primary]]
+name = "Privacy Policy"
+url = "/privacy/"
+weight = 3
+[[menu.footer_primary]]
+name = "Everybody/Art"
+url = "/everybody_art"
+weight = 4
+
+# Footer Menu Secondary
+[[menu.footer_secondary]]
+name = "Probably Not"
+url = "/probably_not"
+weight = 1
+
+[[menu.footer_secondary]]
+name = "ATTN"
+url = "/attn"
+weight = 2
+[[menu.footer_secondary]]
+name = "World to GIF"
+url = "/world_to_gif"
+weight = 3
+[[menu.footer_secondary]]
+name = "Tastegram"
+url = "/tastegram"
+weight = 4
+[[menu.footer_secondary]]
+name = "Soylent Science"
+url = "/soylent_science"
+weight = 5

@@ -1,0 +1,17 @@
+---
+appendSiteTitle: true
+google_analytics_id: ""
+og_meta:
+  meta_twitter_site: "@miguelsicart"
+  meta_twitter_creator: "@miguelsicart"
+social:
+  - title: "Twitter"
+    fa_icon: "fab fa-twitter" # you can use any icon from font-awesome https://fontawesome.com/icons/twitter-square?style=brands
+    url: "https://twitter.com/miguelsicart"
+  - title: "Github"
+    fa_icon: "fab fa-github"
+    url: "https://github.com/deterbold"
+  - title: "Mastodon"
+    fa_icon: "fab fa-mastodon"
+    url: "https://assemblag.es/web/@miguelsicart"
+

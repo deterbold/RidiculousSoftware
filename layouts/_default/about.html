@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+
+    <div class="post-content">
+        <!-- Main About Content -->
+        <div class="about-content">
+            {{ .Content }}
+        </div>
+
+        <!-- App Logos Grid -->
+        {{ if .Params.app_logos }}
+        <div class="app-logos-section" style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border-color, #eee);">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Apps</h2>
+            <div class="app-logos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 2rem; justify-items: center; max-width: 800px; margin: 0 auto;">
+                {{ range .Params.app_logos }}
+                <div class="app-logo-item">
+                    {{ if .link }}
+                    <a href="{{ .link }}" style="text-decoration: none; color: inherit;">
+                    {{ end }}
+                        <div class="app-logo" style="text-align: center;">
+                            <img src="{{ .image | relURL }}" alt="{{ .name }} Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+                            {{ if .name }}
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem; font-weight: 500;">{{ .name }}</p>
+                            {{ end }}
+                        </div>
+                    {{ if .link }}
+                    </a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</article>
+
+<style>
+.app-logo-item:hover img {
+    transform: scale(1.05);
+}
+
+.app-logo-item a:hover {
+    text-decoration: none !important;
+}
+</style>
+{{ end }}

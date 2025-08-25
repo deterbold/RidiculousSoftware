@@ -1,0 +1,31 @@
+---
+disableDarkMode: false
+logo:
+  text: Ridiculous Software
+  showLogoTextOnDesktop: true
+  showLogoTextOnMobile: true
+  showLogoImageOnDesktop: true
+  showLogoImageOnMobile: true
+  logoDesktop: "images/logo/logo.svg"
+  logoDesktopDarkMode: "images/logo/logo-invert.svg"
+  logoMobile: "images/logo/logo-mobile.svg"
+  logoMobileDarkMode: "images/logo/logo-invert-mobile.svg"
+  logoDesktopHeight: 32
+  logoMobileHeight: 32
+header:
+  headerFixed: true
+  headerHeight: '60px' # recommended "60px" - updates a SCSS variable so requires restarting hugo server
+  disableHamburgerMenu: false
+footer:
+  title: "Ridiculous Software"
+  description: "All Software is Ridiculous, but some of it is useful"
+  copyrightText: "© Ridiculous Software"
+  copyrightLink: "https://ridiculous.software"
+  copyrightShow: true
+  showSocialMediaIcons: true
+  footerMenuPrimaryHeading: "The Project"
+  showPrimaryFooterMenu: true
+  footerMenuSecondaryHeading: "The Software"
+  showSecondaryFooterMenu: true
+  footerMenuThirdHeading: "Other"
+  showThirdFooterMenu: false
