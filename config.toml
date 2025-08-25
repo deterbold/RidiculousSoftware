@@ -20,12 +20,12 @@ work = "works"
 author = "authors"
 
 [params]
-dateform        = "Jan 2, 2006"
-dateformShort   = "Jan 2"
-dateformNum     = "2006-01-02"
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
-description = "Ridiculous Software - AI-powered mobile applications"
-homeSubtitle = "AI-powered mobile applications"
+description = "Ridiculous Software"
+homeSubtitle = "All software is ridiculous"
 enableThemeToggle = true
 enableSharingButtons = false
 
@@ -33,13 +33,13 @@ enableSharingButtons = false
 name = "Ridiculous Software"
 
 [params.footer]
-trademark = 2024
+trademark = 2028
 copyright = true
 author = true
 
 [params.logo]
-logoMark     = ">"
-logoText     = "$ ridiculous.software"
+logoMark = ">"
+logoText = "$ ridiculous.software"
 logoHomeLink = "/"
 
 # Main Menu

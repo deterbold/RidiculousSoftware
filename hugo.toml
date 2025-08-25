@@ -61,10 +61,10 @@ url = "/about"
 identifier = "apps"
 name = "Apps"
 url = "/apps"
-[[languages.en.menu.main]]
-identifier = "research"
-name = "Research"
-url = "/research"
+# [[languages.en.menu.main]]
+# identifier = "research"
+# name = "Research"
+# url = "/research"
 # [[languages.en.menu.main]]
 #   identifier = "education"
 #   name = "Education"
