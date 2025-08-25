@@ -4,7 +4,7 @@ date: 2024-01-01
 
 featured_apps:
   - name: "Probably Not"
-    description: "An AI-powered decision-making app that helps you make choices when you can't decide."
+    description: "When you don't know when things are, AI can help you."
     logo: "/images/pages/Probably_Not/Probably_Not_Icon.png"
     link: "/apps/probably-not"
     platform: "iOS"
@@ -22,19 +22,19 @@ featured_apps:
     platform: "iOS"
   
   - name: "Tastegram"
-    description: "Social food discovery and recipe sharing platform for culinary enthusiasts."
+    description: "Become a better photographer by delegating aesthetic judgement to AI"
     logo: "/images/pages/Tastegram/icon.png"
     link: "/apps/tastegram"
     platform: "iOS"
   
   - name: "Soylent Science"
-    description: "Nutritional analysis and meal planning tool powered by scientific data."
+    description: "People, not humans."
     logo: "/images/pages/Soylent_Science/icon_Final.png"
     link: "/apps/soylent-science"
     platform: "Web"
   
   - name: "Existential Check"
-    description: "Philosophical reflection tool that questions existence and reality."
+    description: "Philosophical selfies."
     logo: "/images/pages/existential_check/ec_icon.png"
     link: "/apps/existential-check"
     platform: "Web"
