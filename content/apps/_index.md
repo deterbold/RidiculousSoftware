@@ -56,11 +56,7 @@ featured_apps:
     logo: "/images/pages/Take_Maker/TakeMaker_Icon.png"
     link: "/apps/take-maker"
     platform: "iOS"
-  # - name: "Everybody/Art"
-  #   description: "Collaborative art creation platform where everyone contributes to collective masterpieces."
-  #   logo: "/images/pages/everybody_art/icon.jpg"
-  #   link: "/apps/everybody-art"
-  #   platform: "Web"
+  
 ---
 
 Explore our collection of AI-powered applications that blend cutting-edge technology with human insight. Each app represents our commitment to solving real problems in delightfully unexpected ways.
