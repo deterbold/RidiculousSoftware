@@ -50,6 +50,12 @@ featured_apps:
     logo: "/images/pages/Chimney_of_Wisdom/BRZ_cover.png"
     link: "/apps/chimney-of-wisdom"
     platform: "iOS"
+  
+  - name: "Take Maker"
+    description: "AI-powered opinions"
+    logo: "/images/pages/Take_Maker/TakeMaker_Icon.png"
+    link: "/apps/take-maker"
+    platform: "iOS"
   # - name: "Everybody/Art"
   #   description: "Collaborative art creation platform where everyone contributes to collective masterpieces."
   #   logo: "/images/pages/everybody_art/icon.jpg"
