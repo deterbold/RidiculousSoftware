@@ -1,0 +1,1 @@
+is the way of objects to act in the world
