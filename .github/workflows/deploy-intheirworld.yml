@@ -1,0 +1,35 @@
+name: Deploy In Their World
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'intheirworld/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        working-directory: intheirworld
+        run: npm install
+
+      - name: Build Quartz
+        working-directory: intheirworld
+        run: npx quartz build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: intheirworld/public/
+          server-dir: /web/intheirworld/
