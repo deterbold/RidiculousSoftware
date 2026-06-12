@@ -1,0 +1,4 @@
+Options +MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^([^.]+)$ $1.html [L]
