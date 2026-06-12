@@ -37,3 +37,4 @@ jobs:
           local-dir: ./intheirworld/public/
           server-dir: /web/intheirworld/
           state-name: .ftp-deploy-sync-state-intheirworld.json
+          dangerous-clean-slate: true
