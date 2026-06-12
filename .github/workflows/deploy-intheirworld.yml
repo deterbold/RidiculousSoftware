@@ -25,11 +25,15 @@ jobs:
         working-directory: intheirworld
         run: npx quartz build
 
+      - name: Copy htaccess
+        run: cp intheirworld/static/.htaccess intheirworld/public/.htaccess
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: intheirworld/public/
+          local-dir: ./intheirworld/public/
           server-dir: /web/intheirworld/
+          state-name: .ftp-deploy-sync-state-intheirworld.json
