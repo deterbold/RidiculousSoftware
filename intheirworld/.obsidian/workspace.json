@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/prompts/ontology-market/ontology-market-prompts.md",
+                "file": "content/prompts/cyberopsis/cyberopsis-system-prompts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ontology-market-prompts"
+              "title": "cyberopsis-system-prompts"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "45c16c9bbc7f3971",
   "lastOpenFiles": [
-    "content/prompts/take-maker/take-maker-prompts.md",
     "content/prompts/ontology-market/ontology-market-prompts.md",
+    "content/prompts/take-maker/take-maker-prompts.md",
     "content/prompts/ontology-market",
     "content/prompts/cyberopsis/cyberopsis-system-prompts.md",
     "content/prompts/take-maker",
